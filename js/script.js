@@ -26,20 +26,24 @@ navToggle.addEventListener('click', function() {
 
     var carousel = document.getElementById('carousel');
     var list = carousel.querySelector('.pets__list');
-    var listElems = carousel.querySelectorAll('.pets__item');
+    var listElems = list.querySelectorAll('.pets__item');
+    var listElem = list.querySelector('.pets__item');
+    var margin = 30;
 
     var position = 0; // текущий сдвиг влево
 
     carousel.querySelector('.pets__arrow--prev').onclick = function() {
       // сдвиг влево
       // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position + width * count, 0)
+      position = Math.min(position + (width + 30) * count, 0)
      list.style.marginLeft = position + 'px';
+  //   listElem.style.marginLeft = position + 60 + 'px';
     };
 
     carousel.querySelector('.pets__arrow--next').onclick = function() {
       // сдвиг вправо
       // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position - width * count, -width * (listElems.length - count));
+      position = Math.max(position - (width + 30)  * count, -width * (listElems.length - count));
     list.style.marginLeft = position + 'px';
+  //  listElem.style.marginLeft = position + 30 + 'px';
     };
