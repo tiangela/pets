@@ -541,6 +541,10 @@ h3 {
 .pets__item--zero {
   background-color: #f6f6f6;
 }
+.pets__item--tabl,
+.pets__item--desk {
+  display: none;
+}
 .pets__arrow {
   width: 50px;
   height: 50px;
@@ -558,13 +562,27 @@ h3 {
 }
 @media (min-width: 768px) {
   .pets__carousel {
-    width: 570px;
-  }
-  .pets__container {
     width: 600px;
   }
+  .pets__container {
+    width: 570px;
+  }
   .pets__item {
-    margin-right: 30px;
+    margin-right: 40px;
+  }
+  .pets__item--table {
+    display: block;
+  }
+}
+@media (min-width: 1150px) {
+  .pets__carousel {
+    width: 900px;
+  }
+  .pets__container {
+    width: 870px;
+  }
+  .pets__item--desk {
+    display: block;
   }
 }
 .btn-link {

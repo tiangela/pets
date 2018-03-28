@@ -53,6 +53,9 @@ display: flex;
   &--zero {
     background-color: @bgr-grey;
   }
+  &--tabl, &--desk {
+    display: none;
+  }
 }
 
 .pets__arrow {
@@ -73,20 +76,30 @@ display: flex;
 
   @media @tablet-widths {
     .pets__carousel {
-      width: 570px;
+      width: 600px;
     }
     .pets__container {
-      width: 600px
+      width: 570px
     }
 
     .pets__item {
-      margin-right: 30px;
-      &--third {
-              }
+      margin-right: 40px;
+      &--table {
+        display: block;
+        }
       }
-
-
-  //   .pets__item:nth-child(1) {
-  //    margin-left: 0;
-  //  }
   }
+
+@media @desktop-widths {
+  .pets__carousel {
+    width: 900px;
+  }
+  .pets__container {
+    width: 870px;
+  }
+  .pets__item {
+    &--desk {
+      display: block;
+    }
+  }
+}
