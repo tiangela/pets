@@ -42,6 +42,6 @@ navToggle.addEventListener('click', function() {
     carousel.querySelector('.pets__arrow--next').onclick = function() {
       // сдвиг вправо
       // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position - (width + margin)  * count, -width * (listElems.length - count));
+      position = Math.max(position - (width + margin)  * count, -(width+margin) * (listElems.length - count));
     list.style.marginLeft = position + 'px';
     };
