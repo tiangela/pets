@@ -1,5 +1,6 @@
 .header {
   background-image: url("../img/head-bgr.jpg");
+  background-color: @brown;;
   padding-top: 30px;
 }
 
@@ -30,4 +31,17 @@
   line-height: 16px;
   letter-spacing: .5px;
   color: @text-light-grey;
+}
+
+@media @tablet-widths {
+  .header__container {
+    margin-top: 40px;
+  }
+  .header__about {
+    margin-top: 0;
+  }
+  .header__about-container {
+    width: 450px;
+    margin: 40px auto;
+  }
 }

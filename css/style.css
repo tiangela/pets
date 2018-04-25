@@ -248,6 +248,7 @@ h3 {
 }
 .header {
   background-image: url("../img/head-bgr.jpg");
+  background-color: #41382f;
   padding-top: 30px;
 }
 .header__wrapper {
@@ -285,19 +286,20 @@ h3 {
   letter-spacing: .5px;
   color: #c5c5c5;
 }
-.menu {
-  margin: 0 auto;
-  position: relative;
+@media (min-width: 768px) {
+  .header__container {
+    margin-top: 40px;
+  }
+  .header__about {
+    margin-top: 0;
+  }
+  .header__about-container {
+    width: 450px;
+    margin: 40px auto;
+  }
 }
-.menu--main {
-  display: none;
-}
-.menu--footer {
-  display: none;
-}
-.menu .menu__toggle {
+.menu__toggle {
   position: absolute;
-  top: -35px;
   right: 0;
   z-index: 40;
   display: block;
@@ -308,13 +310,17 @@ h3 {
   border: none;
   background-color: inherit;
 }
+.menu {
+  margin: 0 auto;
+  position: relative;
+}
 .menu--closed .menu__toggle::before {
   content: "";
   position: absolute;
   width: 35px;
   height: 25px;
   right: 0;
-  top: 8px;
+  bottom: 25px;
   background-image: url("../img/burger_icon-mob.png");
   background-repeat: no-repeat;
 }
@@ -355,7 +361,7 @@ h3 {
   padding: 0;
 }
 .menu__link {
-  font-size: 23px;
+  font-size: 20px;
   line-height: normal;
   display: block;
   text-decoration: none;
@@ -368,8 +374,7 @@ h3 {
   padding-bottom: 0;
 }
 .menu__wrapper {
-  padding-top: 28px;
-  border-top: 1px solid #fff;
+  padding-top: 40px;
   border-bottom: 1px solid #fff;
 }
 .menu__title {
@@ -384,20 +389,29 @@ h3 {
   font-weight: bold;
 }
 @media (min-width: 768px) {
-  .menu {
-    padding-top: 45px;
+  .menu--open {
+    width: 500px;
+    margin-bottom: 55px;
+    background-image: url("../img/Pets.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
   }
   .menu--open::before {
     left: 30px;
   }
+  .menu--closed {
+    margin-bottom: 50px;
+  }
   .menu--closed .menu__toggle::before {
-    top: 30px;
+    bottom: 40px;
     right: 15px;
     width: 50px;
     height: 31px;
     background-image: url("../img/burger_icon-tab.png");
   }
   .menu__link {
+    font-size: 24px;
     padding-bottom: 45px;
   }
   .menu__link--contact {
@@ -407,6 +421,7 @@ h3 {
     width: 312px;
     padding-top: 47px;
     padding-bottom: 50px;
+    border: none;
   }
 }
 @media (min-width: 1150px) {
@@ -473,7 +488,7 @@ h3 {
   }
 }
 .about__title {
-  display: inline-block;
+  display: block;
 }
 .about__text {
   font-family: Arial, sans-serif;
@@ -589,17 +604,35 @@ h3 {
   font-size: 14px;
   padding: 9px 30px;
   border-radius: 20px;
-  background-color: #f1cdb3;
   text-align: center;
   width: 150px;
   height: 40px;
-}
-.btn-link--header {
-  margin-top: 30px;
-}
-.btn-link--pets {
   background-color: #fafafa;
   border: 2px solid #f1cdb3;
+  position: relative;
+}
+.btn-link--header {
+  background-color: #f1cdb3;
+}
+.btn-link--get {
+  width: 200px;
+  background-color: #f1cdb3;
+}
+.btn-link--donate {
+  background-color: #f1cdb3;
+  width: 250px;
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+.btn-link--donate::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  top: 6px;
+  left: 15px;
+  background-image: url("../img/credit-card.png");
 }
 .help {
   width: 280px;
