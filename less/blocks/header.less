@@ -1,2 +1,47 @@
 .header {
+  background-image: url("../img/head-bgr.jpg");
+  background-color: @brown;;
+  padding-top: 30px;
+}
+
+.header__wrapper {
+  .container ();
+}
+
+.header__text {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: @white;
+  margin: 0;
+  padding: 0;
+}
+
+.header__about {
+  margin-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.header__about-title {
+  padding-right: 13px;
+  }
+
+.header__about-text {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: @text-light-grey;
+}
+
+@media @tablet-widths {
+  .header__container {
+    margin-top: 40px;
+  }
+  .header__about {
+    margin-top: 0;
+  }
+  .header__about-container {
+    width: 450px;
+    margin: 40px auto;
+  }
 }

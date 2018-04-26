@@ -1,21 +1,18 @@
 .clearfix() {
   &::after {
     content: "";
-
     display: table;
     clear: both;
   }
 }
 
- .container() {
-  width: 310px;
+.container() {
+  width: 280px;
   margin: 0 auto;
-
-  @media @mobile-full-widths {
-    width: 440px;
-  }
-
   @media @tablet-widths {
-    width: 698px;
+    width: 668px;
+  }
+  @media @desktop-widths {
+    width: 1050px;
   }
 }
