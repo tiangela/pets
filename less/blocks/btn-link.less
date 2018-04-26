@@ -1,0 +1,39 @@
+.btn-link {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: Georgia;
+  text-decoration: none;
+  color: @btn-text;
+  font-size: 14px;
+  padding: 9px 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: @bgr-white;
+  border: 2px solid @orange;
+  position: relative;
+  &--header {
+    background-color: @orange;
+  }
+  &--get {
+    width: 200px;
+    background-color: @orange;
+  }
+  &--donate {
+    background-color: @orange;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+  &--donate::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    top: 6px;
+    left: 15px;
+    background-image: url("../img/credit-card.png");
+  }
+}

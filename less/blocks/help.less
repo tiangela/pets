@@ -1,0 +1,127 @@
+.help {
+  .container();
+  margin-bottom: 40px;
+  background-image: image();
+}
+
+.help__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.help__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.help__item {
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 20px;
+  color: @title-grey;
+  position: relative;
+  padding-top: 25px;
+  padding-left: 40px;
+&--food::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: 0;
+  background-image: url("../img/food.png");
+  }
+&--transp::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/ambulance.png");
+}
+&--toys::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/ball.png");
+}
+&--cups::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/bowl.png");
+}
+&--shamp::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: 2px;
+  background-image: url("../img/shampoo.png");
+}
+&--vit::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/pills.png");
+}
+&--med::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/syringe.png");
+}
+&--coll::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/leash.png");
+}
+&--area::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
+  background-image: url("../img/cat.png");
+}
+}
