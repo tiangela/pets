@@ -1,18 +1,6 @@
-.menu {
-  margin: 0 auto;
-  position: relative;
-
-  &--main {
-    display: none;
-  }
-
-  &--footer {
-    display: none;
-  }
 
   .menu__toggle {
     position: absolute;
-    top: -35px;
     right: 0;
     z-index: 40;
     display: block;
@@ -24,6 +12,9 @@
     background-color: inherit;
   }
 
+.menu {
+  margin: 0 auto;
+  position: relative;
   &--closed {
     .menu__toggle::before {
       content: "";
@@ -31,7 +22,7 @@
       width: 35px;
       height: 25px;
       right: 0;
-      top: 8px;
+      bottom: 25px;
       background-image: url("../img/burger_icon-mob.png");
       background-repeat: no-repeat;
     }
@@ -73,7 +64,7 @@
       display: block;
     }
   }
-}
+  }
 
 .menu__list {
   list-style: none;
@@ -84,7 +75,7 @@
 }
 
 .menu__link {
-  font-size: 23px;
+  font-size: 20px;
   line-height: normal;
   display: block;
   text-decoration: none;
@@ -99,8 +90,7 @@
 }
 
 .menu__wrapper {
-  padding-top: 28px;
-  border-top: 1px solid @white;
+  padding-top: 40px;
   border-bottom: 1px solid @white;
 }
 
@@ -118,13 +108,21 @@
 }
 @media @tablet-widths {
   .menu {
-    padding-top: 45px;
-    &--open::before {
+&--open {
+  width: 500px;
+  margin-bottom: 55px;
+  background-image: url("../img/Pets.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+  &--open::before {
       left: 30px;
     }
   &--closed {
+    margin-bottom: 50px;
     .menu__toggle::before {
-      top: 30px;
+      bottom: 40px;
       right: 15px;
       width: 50px;
       height: 31px;
@@ -132,8 +130,8 @@
     }
   }
   }
-
   .menu__link {
+    font-size: 24px;
     padding-bottom: 45px;
 
     &--contact {
@@ -145,6 +143,7 @@
     width: 312px;
     padding-top: 47px;
     padding-bottom: 50px;
+    border: none;
   }
 }
 @media @desktop-widths {
