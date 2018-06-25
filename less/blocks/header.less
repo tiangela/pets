@@ -1,6 +1,8 @@
 .header {
   background-image: url("../img/head-bgr.jpg");
-  background-color: @brown;;
+  background-color: @bgr-black;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   padding-top: 30px;
 }
 
@@ -44,4 +46,22 @@
     width: 450px;
     margin: 40px auto;
   }
+}
+
+@media @desktop-widths{
+  .header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+  }
+  .header__container {
+    margin-top: 0;
+  }
+.header__title {
+  font-size: 32px;
+}
+.header__text {
+  font-size: 13px;
+}
 }
