@@ -2,7 +2,7 @@
   background-image: url("../img/head-bgr.jpg");
   background-color: @bgr-black;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   padding-top: 30px;
 }
 
@@ -49,13 +49,19 @@
 }
 
 @media @desktop-widths{
+  .header {
+    min-height: 924px;
+    position: relative;
+  }
   .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
   }
+
   .header__container {
+    width: 700px;
     margin-top: 0;
   }
 .header__title {
@@ -63,5 +69,30 @@
 }
 .header__text {
   font-size: 13px;
+}
+.header__about {
+  width: 420px;
+  margin-top: 240px;
+  text-align: left;
+}
+
+.header__about:after {
+  content: "";
+background-image: url("../img/head-pet.png");
+position: absolute;
+right: 0;
+top: 0;
+width: 974px;
+height: 924px;
+}
+.header__about-container {
+  margin: 0;
+}
+
+.header__about-text {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 25px;
+
 }
 }
