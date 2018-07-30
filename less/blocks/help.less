@@ -1,5 +1,6 @@
 .help {
   background-color: @bgr-white;
+  padding: 50px 0;
 }
 
 .help__container {
@@ -7,17 +8,17 @@
 }
 
 .help__title {
-  padding-top: 30px;
-  margin-bottom: 10px;
+  display: block;
+  text-align: center;
 }
 
 .help__list {
-
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .help__item {
@@ -27,115 +28,55 @@
   color: @title-grey;
   position: relative;
   padding-top: 25px;
-  padding-left: 40px;
-
   &--food::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
     top: 18px;
     left: 0;
     background-image: url("../img/food.png");
   }
 
   &--transp::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/ambulance.png");
   }
 
   &--toys::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/ball.png");
   }
 
   &--cups::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/bowl.png");
   }
 
   &--shamp::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
     left: 2px;
     background-image: url("../img/shampoo.png");
   }
 
   &--vit::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/pills.png");
   }
 
   &--med::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/syringe.png");
   }
 
   &--coll::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/leash.png");
   }
 
   &--area::before {
-    content: "";
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    top: 18px;
-    left: -7px;
     background-image: url("../img/cat.png");
   }
+}
+
+.help__item::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  left: -7px;
 }
 
 @media @tablet-widths {
@@ -144,11 +85,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
-    margin-left: 30px;
-    padding-bottom: 60px;
 }
 
 .help__item {
   width: 200px;
 }
+}
+
+@media @desktop-widths {
+  .help__list {
+    justify-content: center;
+    width: 1050px;
+  }
+  .help__item {
+    padding-top: 80px;
+    margin-top: 65px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .help__item::before {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 74px;
+  }
 }

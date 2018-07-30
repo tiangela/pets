@@ -1,7 +1,7 @@
 .pets {
   text-align: center;
   background-color: @bgr-grey;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .pets__wrapper {
@@ -17,9 +17,7 @@
 
 .pets__container {
   width: 270px;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px auto;
   overflow: hidden;
 }
 
@@ -64,17 +62,21 @@ display: flex;
   border: 2px solid @orange;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  top: 50%;
   &--prev {
     background-image: url("../img/left-arrow.png");
+    left: -65px;
   }
   &--next {
     background-image: url("../img/right-arrow.png");
+    right: -65px;
   }
   }
 
  .pets__title {
   display: block;
-  padding: 15px 0;
+  padding: 0;
   }
 
   @media @tablet-widths {
@@ -87,15 +89,39 @@ display: flex;
 }
 
 @media @desktop-widths {
+  .pets {
+    padding: 70px 0;
+  }
   .pets__carousel {
     width: 900px;
   }
+
   .pets__container {
+    margin: 70px auto;
     width: 890px;
   }
+
   .pets__item {
     &--desk {
       display: block;
     }
   }
+
+.pets__title {
+  display: block;
+   width: 450px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.pets__arrow {
+  position: absolute;
+  top: 37%;
+  &--prev {
+    left: -117px;
+  }
+&--next {
+  right: -117px;
+}
+}
 }

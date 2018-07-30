@@ -150,6 +150,7 @@
   .menu {
     padding-top: 0;
     margin: 0;
+    z-index: 100;
     &--main {
         display: block;
     }
@@ -162,10 +163,10 @@
 
     .menu__link {
       font-size: 15px;
+      line-height: 24px;
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 5px;
       padding-right: 0;
-      border-bottom: 1px solid red;
       &--main {
         color: @white;
       }
@@ -175,14 +176,13 @@
     }
 
     .menu__wrapper {
-      width: 500px;
+      width: 488px;
       padding-top: 0;
       padding-bottom: 0;
       border-top: none;
       border-bottom: none;
       display: block;
       margin: 0 auto;
-      margin-bottom: 45px;
       &--opacity {
         opacity: 0.8;
       }
@@ -200,4 +200,17 @@
       margin-top: 45px;
     }
   }
+  .menu__item {
+    position: relative;
+  }
+  .menu__item:hover::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: @orange;
+        bottom: -5px;
+        left: 0;
+        border-radius: 2px;
+      }
 }

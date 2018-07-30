@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .contacs__container {
@@ -18,7 +18,8 @@
   font-family: 'Times New Roman';
   font-size: 20px;
   color: @orange;
-  padding-left: 46px;
+  padding-left: 60px;
+  padding-bottom: 15px;
   position: relative;
   &::before {
     content: '';
@@ -44,7 +45,7 @@
     height: 36px;
     background-image: url("../img/pin.png");
     background-repeat: no-repeat;
-    top: 2px;
+    top: -5px;
   }
   &--address-second::before {
     width: 26px;
@@ -52,5 +53,39 @@
     background-image: url("../img/pin.png");
     background-repeat: no-repeat;
     top: -5px;
+  }
+}
+
+@media @desktop-widths {
+  .contacs__container {
+    margin-bottom: 30px;
+    width: 284px;
+    margin-right: 125px;
+    position: relative;
+  }
+  .contacts {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 43px;
+  }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 81px;
+    right: 0;
+    background-image: url("../img/puppy.png");
+    background-repeat: no-repeat;
+  }
+
+  .contacts__item {
+    padding-left: 65px;
+    &--mail {
+      padding-bottom: 33px;
+    }
+    &--address {
+      padding-bottom: 19px;
+    }
   }
 }

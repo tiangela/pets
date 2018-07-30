@@ -2,8 +2,8 @@
   background-image: url("../img/head-bgr.jpg");
   background-color: @bgr-black;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding-top: 30px;
+  background-size: cover;
+  padding-top: 47px;
 }
 
 .header__wrapper {
@@ -26,42 +26,79 @@
 
 .header__about-title {
   padding-right: 13px;
-  }
+}
 
 .header__about-text {
   font-size: 13px;
   line-height: 16px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: @text-light-grey;
 }
-
 @media @tablet-widths {
   .header__container {
     margin-top: 40px;
   }
+
   .header__about {
     margin-top: 0;
   }
+
   .header__about-container {
     width: 450px;
     margin: 40px auto;
   }
 }
+@media @desktop-widths {
+  .header {
+    min-height: 921px;
+  }
 
-@media @desktop-widths{
   .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
+    position: relative;
+    width: 1195px;
   }
+
   .header__container {
+    width: 650px;
     margin-top: 0;
   }
-.header__title {
-  font-size: 32px;
-}
-.header__text {
-  font-size: 13px;
-}
+
+  .header__title {
+
+  }
+
+  .header__text {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+
+  .header__about {
+    width: 420px;
+    margin-top: 240px;
+    text-align: left;
+  }
+
+  .header__about:after {
+    content: "";
+    background-image: url("../img/head-pet.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -10%;
+    top: -8%;
+    width: 744px;
+    height: 924px;
+  }
+
+  .header__about-container {
+    margin: 0;
+  }
+
+  .header__about-text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
 }
