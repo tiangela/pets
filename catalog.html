@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="header header--catalog">
+    <div class="header__wrapper">
+      <div class="header__container">
+        <h1 class="header__title"><a class="header__title-link" href="index.html">Cozy House</a></h1>
+        <p class="header__text header__text--catalog">Shelter for pets in Boston</p>
+      </div>
+      <nav class="menu menu--closed menu--nojs">
+        <button class="menu__toggle" type="button">Открыть меню</button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link menu__link--catalog" href="index.html">About the shelter</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link menu__link--catalog" href="#pets">Our pets</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--catalog" href="index.html#help">To help the shelter</a></li>
+            <li class="menu__item"><a class="menu__link menu__link menu__link--catalog" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__catalog">
+      <h3 class="main__catalog-title">Our friends who<br> are looking for a house</h3>
+      <div class="main__wrapper">
+        <article class="pets__item pets__item--catalog"><img src="img/Katrine.jpg" class="pets__img"><span class="pets__name">Katrine</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/Jennifer.jpg" class="pets__img"><span class="pets__name">Jennifer</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/Woody.jpg" class="pets__img"><span class="pets__name">Woody</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/sophia.jpg" class="pets__img"><span class="pets__name">Sophia</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/timmy.jpg" class="pets__img"><span class="pets__name">Timmy</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/charly.jpg" class="pets__img"><span class="pets__name">Charly</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/scarlett.jpg" class="pets__img"><span class="pets__name">Scarlett</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+        <article class="pets__item pets__item--catalog"><img src="img/freddy.jpg" class="pets__img"><span class="pets__name">Freddy</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+      </div>
+      <div class="paginator">
+        <a class="paginator__item paginator__item--active">1</a>
+        <a class="paginator__item" href="#">2</a>
+        <a class="paginator__item" href="#">3</a>
+        <a class="paginator__item paginator__item--more" href="#">...</a>
+        <a class="paginator__item" href="#">10</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="contacts" id="contacts">
+        <div class="contacs__container">
+          <h3 class="contacts__title">For questions and suggestions</h3>
+          <p class="contacts__item contacts__item--mail">email@shelter.com</p>
+          <p class="contacts__item contacts__item--phone">+13 674 567 75 54</p>
+        </div>
+        <div class="contacs__container">
+          <h3 class="contacts__title">We are waiting for your visit</h3>
+          <p class="contacts__item contacts__item--address">Boston, Central Street, 1st (Entrance from the store)</p>
+          <p class="contacts__item contacts__item--address contacts__item--address-second">London, South Park, 18st</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

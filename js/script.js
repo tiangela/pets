@@ -45,3 +45,6 @@ navToggle.addEventListener('click', function() {
       position = Math.max(position - (width + margin)  * count, -(width+margin) * (listElems.length - count));
     list.style.marginLeft = position + 'px';
     };
+
+  // Модальное окно
+  
