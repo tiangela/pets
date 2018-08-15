@@ -13,16 +13,16 @@
     <div class="header__wrapper">
       <div class="header__container">
         <h1 class="header__title">Cozy House</h1>
-        <p class="header__text">Shelter for pets in Boston</p>
+        <p class="header__text header__text--index">Shelter for pets in Boston</p>
       </div>
       <nav class="menu menu--closed menu--nojs">
         <button class="menu__toggle" type="button">Открыть меню</button>
         <div class="menu__wrapper">
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link menu__link--active">About the shelter</a></li>
-            <li class="menu__item menu__item--test"><a class="menu__link" href="#">Our pets</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">To help the shelter</a></li>
-            <li class="menu__item"><a class="menu__link menu__link" href="#">Contact</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link" href="#about">About the shelter</a></li>
+            <li class="menu__item menu__item--test"><a class="menu__link" href="#pets">Our pets</a></li>
+            <li class="menu__item"><a class="menu__link" href="#help">To help the shelter</a></li>
+            <li class="menu__item"><a class="menu__link menu__link" href="#contacts">Contacts</a></li>
           </ul>
         </div>
       </nav>
@@ -37,7 +37,7 @@
   </header>
   <main class="main">
     <div class="main__container">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__wrapper">
         <h3 class="about__title">About the shelter “Cozy House”</h3>
         <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
@@ -45,28 +45,29 @@
           Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.</p>
         </div>
       </section>
-      <section class="pets">
+      <section class="pets" id="pets">
         <h3 class="pets__title">Our friends who<br> are looking for a house</h3>
           <div class="pets__wrapper">
         <div id="carousel" class="pets__carousel">
           <button class="pets__arrow pets__arrow--prev"></button>
             <div class="pets__container">
               <div class="pets__list">
-              <article class="pets__item"><img src="img/Katrine.jpg" class="pets__img"><span class="pets__name">Katrine</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Jennifer.jpg" class="pets__img"><span class="pets__name">Jennifer</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Woody.jpg" class="pets__img"><span class="pets__name">Woody</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Katrine.jpg" class="pets__img"><span class="pets__name">Katrine</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Jennifer.jpg" class="pets__img"><span class="pets__name">Jennifer</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Woody.jpg" class="pets__img"><span class="pets__name">Woody</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
-              <article class="pets__item"><img src="img/Katrine.jpg" class="pets__img"><span class="pets__name">Katrine</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/Katrine.jpg" class="pets__img"><span class="pets__name">Katrine</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/Jennifer.jpg" class="pets__img"><span class="pets__name">Jennifer</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/Woody.jpg" class="pets__img"><span class="pets__name">Woody</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/sophia.jpg" class="pets__img"><span class="pets__name">Sophia</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/timmy.jpg" class="pets__img"><span class="pets__name">Timmy</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/charly.jpg" class="pets__img"><span class="pets__name">Charly</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/scarlett.jpg" class="pets__img"><span class="pets__name">Scarlett</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
+                <article class="pets__item"><img src="img/freddy.jpg" class="pets__img"><span class="pets__name">Freddy</span><a href="#" class="btn-link btn-link--pets btn-link--js">Learn More</a></article>
               </div>
             </div>
             <button class="pets__arrow pets__arrow--next"></button>
           </div>
           </div>
-        <a href="#" class="btn-link btn-link--get">Get to know the rest</a>
+        <a href="catalog.html" class="btn-link btn-link--get">Get to know the rest</a>
       </section>
-<section class="help">
+<section class="help" id="help">
   <div class="help__container">
   <h3 class="help__title">Than you can help<br> our shelter</h3>
   <ul class="help__list">
@@ -82,7 +83,7 @@
   </ul>
   </div>
 </section>
-<section class="donate">
+<section class="donate" id="donate">
   <div class="donate__container">
     <div class="donate__wrapper">
   <h3 class="donate__title">In addition, you <span>can make a donation</span></h3>
@@ -96,7 +97,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacs__container">
           <h3 class="contacts__title">For questions and suggestions</h3>
           <p class="contacts__item contacts__item--mail">email@shelter.com</p>

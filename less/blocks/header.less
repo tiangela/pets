@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 47px;
+  &--catalog {
+    background-color: @bgr-white;
+    background-image: none;
+  }
 }
 
 .header__wrapper {
@@ -13,9 +17,14 @@
 .header__text {
   font-family: Arial, sans-serif;
   font-size: 10px;
-  color: @white;
   margin: 0;
   padding: 0;
+  &--index {
+    color: @white;
+  }
+  &--catalog {
+    color: @title-grey;
+  }
 }
 
 .header__about {
@@ -34,6 +43,12 @@
   letter-spacing: 0.5px;
   color: @text-light-grey;
 }
+
+.header__title-link {
+  text-decoration: none;
+  color: @orange;
+}
+
 @media @tablet-widths {
   .header__container {
     margin-top: 40px;
@@ -51,6 +66,10 @@
 @media @desktop-widths {
   .header {
     min-height: 921px;
+    &--catalog {
+      padding-top: 18px;
+      min-height: 113px;
+    }
   }
 
   .header__wrapper {
@@ -64,10 +83,6 @@
   .header__container {
     width: 650px;
     margin-top: 0;
-  }
-
-  .header__title {
-
   }
 
   .header__text {
