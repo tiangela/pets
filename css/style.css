@@ -257,7 +257,7 @@ h3 {
   background-color: #1d1d1e;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 47px;
+  padding-top: 50px;
 }
 .header--catalog {
   background-color: #fafafa;
@@ -389,7 +389,7 @@ h3 {
   height: 25px;
   right: 0;
   bottom: 25px;
-  background-image: url("../img/burger_icon-mob.png");
+  background-image: url("../img/icon-open.png");
   background-repeat: no-repeat;
 }
 .menu--closed .menu__wrapper {
@@ -409,7 +409,7 @@ h3 {
   font-size: 0;
   top: 0;
   right: 0;
-  background-image: url("../img/icon_close-mob.png");
+  background-image: url("../img/icon-close.png");
   background-repeat: no-repeat;
 }
 .menu--nojs .menu__toggle {
@@ -472,14 +472,14 @@ h3 {
     left: 30px;
   }
   .menu--closed {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .menu--closed .menu__toggle::before {
     bottom: 40px;
     right: 15px;
     width: 50px;
     height: 31px;
-    background-image: url("../img/burger_icon-tab.png");
+    background-image: url("../img/icon-open.png");
   }
   .menu__link {
     font-size: 24px;
@@ -557,7 +557,7 @@ h3 {
     border-bottom: 4px solid #f1cdb3;
   }
   .menu__item--active:hover {
-    border: 0px;
+    border-bottom: 4px solid transparent;
   }
 }
 .main__catalog {
@@ -675,8 +675,7 @@ h3 {
 .pets__carousel {
   width: 270px;
   position: relative;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 .pets__container {
   width: 270px;
@@ -734,6 +733,12 @@ h3 {
 .pets__arrow--next {
   background-image: url("../img/right-arrow.png");
   right: -65px;
+}
+.pets__arrow:hover {
+  background-color: #f1cdb3;
+}
+.pets__arrow:active {
+  background-color: #f5dac7;
 }
 .pets__title {
   display: block;
@@ -816,6 +821,12 @@ h3 {
   top: 6px;
   left: 15px;
   background-image: url("../img/credit-card.png");
+}
+.btn-link:hover {
+  background-color: #efbf9d;
+}
+.btn-link:active {
+  background-color: #f5dac7;
 }
 .help {
   background-color: #fafafa;
@@ -1036,14 +1047,14 @@ h3 {
   height: 36px;
   background-image: url("../img/pin.png");
   background-repeat: no-repeat;
-  top: -5px;
+  top: 5px;
 }
 .contacts__item--address-second::before {
   width: 26px;
   height: 36px;
   background-image: url("../img/pin.png");
   background-repeat: no-repeat;
-  top: -5px;
+  top: -10px;
 }
 @media (min-width: 1250px) {
   .contacs__container {
@@ -1062,13 +1073,10 @@ h3 {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 90px;
+    top: 82px;
     right: 0;
     background-image: url("../img/puppy.png");
     background-repeat: no-repeat;
-  }
-  .contacts__item {
-    padding-left: 65px;
   }
   .contacts__item--mail {
     padding-bottom: 33px;
