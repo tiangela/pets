@@ -59,10 +59,10 @@
 }
 
 .pets__arrow {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: @bgr-grey;
+  background-color: @bgr-white;
   border: 2px solid @orange;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,12 +71,12 @@
 
   &--prev {
     background-image: url("../img/left-arrow.png");
-    left: -65px;
+    left: 0px;
   }
 
   &--next {
     background-image: url("../img/right-arrow.png");
-    right: -65px;
+    right: 0px;
   }
 }
 
@@ -92,6 +92,7 @@
   display: block;
   padding: 0;
 }
+
 @media @tablet-widths {
   .pets__carousel {
     width: 600px;
@@ -100,7 +101,23 @@
   .pets__container {
     width: 580px;
   }
+
+
+.pets__arrow {
+  width: 50px;
+  height: 50px;
+  background-color: @bgr-grey;
+
+  &--prev {
+    left: -65px;
+  }
+
+  &--next {
+    right: -65px;
+  }
 }
+}
+
 @media @desktop-widths {
   .pets {
     padding: 70px 0;
@@ -129,15 +146,14 @@
   }
 
   .pets__arrow {
-    position: absolute;
     top: 37%;
 
     &--prev {
-      left: -117px;
+      left: -110px;
     }
 
     &--next {
-      right: -117px;
+      right: -110px;
     }
   }
 }

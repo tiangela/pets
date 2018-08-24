@@ -356,6 +356,7 @@ h3 {
     top: -8%;
     width: 744px;
     height: 924px;
+    transition: opacity 150ms;
   }
   .header__about-container {
     margin: 0;
@@ -372,7 +373,7 @@ h3 {
   z-index: 40;
   display: block;
   width: 32px;
-  height: 25px;
+  height: 35px;
   font-size: 0;
   cursor: pointer;
   border: none;
@@ -386,9 +387,9 @@ h3 {
   content: "";
   position: absolute;
   width: 35px;
-  height: 25px;
+  height: 35px;
   right: 0;
-  bottom: 25px;
+  bottom: 35px;
   background-image: url("../img/icon-open.png");
   background-repeat: no-repeat;
 }
@@ -716,10 +717,10 @@ h3 {
   margin-bottom: 35px;
 }
 .pets__arrow {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #f6f6f6;
+  background-color: #fafafa;
   border: 2px solid #f1cdb3;
   background-repeat: no-repeat;
   background-position: center;
@@ -728,11 +729,11 @@ h3 {
 }
 .pets__arrow--prev {
   background-image: url("../img/left-arrow.png");
-  left: -65px;
+  left: 0px;
 }
 .pets__arrow--next {
   background-image: url("../img/right-arrow.png");
-  right: -65px;
+  right: 0px;
 }
 .pets__arrow:hover {
   background-color: #f1cdb3;
@@ -750,6 +751,17 @@ h3 {
   }
   .pets__container {
     width: 580px;
+  }
+  .pets__arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #f6f6f6;
+  }
+  .pets__arrow--prev {
+    left: -65px;
+  }
+  .pets__arrow--next {
+    right: -65px;
   }
 }
 @media (min-width: 1250px) {
@@ -773,14 +785,13 @@ h3 {
     text-align: center;
   }
   .pets__arrow {
-    position: absolute;
     top: 37%;
   }
   .pets__arrow--prev {
-    left: -117px;
+    left: -110px;
   }
   .pets__arrow--next {
-    right: -117px;
+    right: -110px;
   }
 }
 .btn-link {
@@ -1073,7 +1084,7 @@ h3 {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 82px;
+    top: 90px;
     right: 0;
     background-image: url("../img/puppy.png");
     background-repeat: no-repeat;
