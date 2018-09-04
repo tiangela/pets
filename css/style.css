@@ -475,7 +475,7 @@ h3 {
     padding-bottom: 50px;
   }
   .menu--closed .menu__toggle::before {
-    bottom: 40px;
+    bottom: 55px;
     right: 15px;
     width: 50px;
     height: 31px;
@@ -769,14 +769,30 @@ h3 {
     padding: 70px 0;
   }
   .pets__carousel {
-    width: 900px;
+    width: 940px;
   }
   .pets__container {
-    margin: 70px auto;
-    width: 890px;
+    margin: 30px auto;
+    width: 940px;
+  }
+  .pets__list {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pets__item {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .pets__item--desk {
     display: block;
+  }
+  .pets__item--catalog {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+  .pets__item:hover {
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
   }
   .pets__title {
     display: block;
@@ -788,10 +804,10 @@ h3 {
     top: 37%;
   }
   .pets__arrow--prev {
-    left: -110px;
+    left: -80px;
   }
   .pets__arrow--next {
-    right: -110px;
+    right: -80px;
   }
 }
 .btn-link {
@@ -1104,13 +1120,15 @@ h3 {
   text-decoration: none;
   color: #292929;
   font-size: 20px;
-  line-height: 44px;
   border: 2px solid #f1cdb3;
   border-radius: 50%;
   width: 45px;
   height: 45px;
   margin-right: 4px;
   margin-left: 4px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  vertical-align: middle;
 }
 .paginator__item--active {
   background-color: #f1cdb3;
